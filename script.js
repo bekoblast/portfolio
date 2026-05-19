@@ -88,7 +88,7 @@ const DATA = {
         tags: ['ERP', 'Daftra', 'Operations', 'Reporting']
       }
     ],
-    cv: 'Babeker Saad CV - 2026 (IT).pdf',
+    cv: 'Babakr Saad CV - 2026 (IT).pdf',
     contact: {
       headline: 'Let’s build something dependable.',
       sub: 'Open to software development, IoT, ERP, and IT systems roles. Reach out — I respond fast.'
