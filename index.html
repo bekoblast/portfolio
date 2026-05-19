@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="tech">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Babakr Hussain Babakr Saad — Software Developer, IT Professional, and Tendering & Operations Coordinator. Saudi Arabia." />
+  <title>Babakr Saad · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Radial wipe overlay used during mode switch -->
+  <div class="mode-wipe" aria-hidden="true">
+    <span class="mode-wipe-label"></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="topnav" aria-label="Primary">
+    <a href="#hero" class="brand">
+      <span class="brand-mark">BS</span>
+      <span class="brand-name">Babakr Saad</span>
+    </a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects" data-label-tech="Projects" data-label-build="Casework">Projects</a></li>
+      <li class="nav-tech-only"><a href="#builds">Builds</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-mode" role="group" aria-label="Switch profile">
+      <button class="nav-mode-btn is-active" data-mode-target="tech">IT</button>
+      <button class="nav-mode-btn" data-mode-target="build">Build</button>
+      <span class="nav-mode-thumb" aria-hidden="true"></span>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="My%20Photo.jpg" alt="Portrait of Babakr Saad" loading="eager">
+          </div>
+          <svg class="photo-ring" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="96" />
+          </svg>
+          <div class="photo-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for work</span>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <p class="kicker"><span class="kicker-line"></span>Hello, I'm</p>
+          <h1 class="hero-name">
+            <span class="hero-name-fl">Babakr</span>
+            <span class="hero-name-ln">Saad</span>
+          </h1>
+          <h2 class="hero-role">
+            <span class="role-prefix">A</span>
+            <span class="role-text" id="role-text"></span>
+            <span class="role-caret"></span>
+          </h2>
+          <p class="hero-summary" id="hero-summary"></p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get in touch</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn btn-ghost" id="cv-download" download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num" data-target="17">0</span><span class="stat-suffix">+</span><span class="stat-label">years</span></div>
+            <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span><span class="stat-label">certifications</span></div>
+            <div class="stat"><span class="stat-num" data-target="2">0</span><span class="stat-label">careers</span></div>
+          </div>
+        </div>
+
+        <!-- THE STAR: profile mode dial -->
+        <div class="mode-dial" role="region" aria-label="Profile mode">
+          <div class="dial-head">
+            <span class="dial-led"></span>
+            <span class="dial-title">PROFILE MODE</span>
+            <span class="dial-meta" id="dial-meta">01 / 02</span>
+          </div>
+          <div class="dial-track">
+            <button class="dial-option" data-mode-target="tech">
+              <svg class="dial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M8 6 L2 12 L8 18"/>
+                <path d="M16 6 L22 12 L16 18"/>
+                <path d="M14 4 L10 20"/>
+              </svg>
+              <div class="dial-text">
+                <span class="dial-name">IT &amp; Software</span>
+                <span class="dial-sub">17 yrs · Dev · IoT · ERP</span>
+              </div>
+            </button>
+            <button class="dial-option" data-mode-target="build">
+              <svg class="dial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 21h18"/>
+                <path d="M5 21V10l7-5 7 5v11"/>
+                <path d="M9 21v-6h6v6"/>
+              </svg>
+              <div class="dial-text">
+                <span class="dial-name">Construction &amp; Tendering</span>
+                <span class="dial-sub">Etimad · Contracts · Ops</span>
+              </div>
+            </button>
+            <span class="dial-thumb" aria-hidden="true"></span>
+          </div>
+          <p class="dial-hint">Click to flip the entire profile</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to content">
+        <span class="cue-line"></span>
+        <span class="cue-text">scroll</span>
+      </a>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+        <span class="section-line"></span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" id="about-text"></div>
+        <aside class="about-card">
+          <div class="about-row"><span>Name</span><strong>Babakr Hussain Babakr Saad</strong></div>
+          <div class="about-row"><span>Location</span><strong>Saudi Arabia</strong></div>
+          <div class="about-row"><span>Phone</span><strong>+966 50 968 0214</strong></div>
+          <div class="about-row"><span>Email</span><strong>beko1986@gmail.com</strong></div>
+          <div class="about-row"><span>Languages</span><strong>Arabic (Native), English (C2)</strong></div>
+          <div class="about-row"><span>Education</span><strong>B.Sc. Computer Science &amp; IT, Sudan University, 2010</strong></div>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+        <span class="section-line"></span>
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Experience</h2>
+        <span class="section-line"></span>
+      </div>
+      <ol id="timeline" class="timeline"></ol>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="section-head">
+        <span class="section-num" data-sec="projects">04</span>
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <span class="section-line"></span>
+      </div>
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+
+    <!-- LIVE BUILDS (IT mode only) -->
+    <section id="builds" class="section builds mode-only-tech">
+      <div class="section-head">
+        <span class="section-num" data-sec="builds">05</span>
+        <h2 class="section-title">Live Builds</h2>
+        <span class="section-line"></span>
+      </div>
+      <p class="section-intro">Sites I've designed and deployed — live URLs, real businesses.</p>
+      <div id="builds-grid" class="builds-grid"></div>
+      <div class="builds-foot" id="builds-foot"></div>
+    </section>
+
+
+    <!-- CREDENTIALS (Education + Certifications + Courses) -->
+    <section id="credentials" class="section credentials">
+      <div class="section-head">
+        <span class="section-num" data-sec="credentials">06</span>
+        <h2 class="section-title">Credentials</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="cred-tabs" role="tablist">
+        <button class="cred-tab is-active" role="tab" data-tab="featured">Featured</button>
+        <button class="cred-tab" role="tab" data-tab="programs">Programs</button>
+        <button class="cred-tab" role="tab" data-tab="modules">All modules</button>
+      </div>
+
+      <div class="cred-panel" data-panel="featured" id="cred-featured"></div>
+      <div class="cred-panel" data-panel="programs" hidden id="cred-programs"></div>
+      <div class="cred-panel" data-panel="modules" hidden id="cred-modules"></div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <span class="section-num" data-sec="contact">07</span>
+        <h2 class="section-title">Contact</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="contact-inner">
+        <div class="contact-pitch">
+          <h3 id="contact-headline"></h3>
+          <p id="contact-sub"></p>
+        </div>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:beko1986@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span class="contact-label">Email</span>
+            <strong>beko1986@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="tel:+966509680214">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92V21a1 1 0 0 1-1.09 1A19 19 0 0 1 2 4.09 1 1 0 0 1 3 3h4.09a1 1 0 0 1 1 .75l1 4a1 1 0 0 1-.27 1L7.21 10.21a16 16 0 0 0 6.58 6.58l1.46-1.61a1 1 0 0 1 1-.27l4 1a1 1 0 0 1 .75 1z"/></svg>
+            <span class="contact-label">Phone / WhatsApp</span>
+            <strong>+966 50 968 0214</strong>
+          </a>
+          <div class="contact-card contact-card--static">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="contact-label">Based in</span>
+            <strong>Saudi Arabia</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="foot-l">© <span id="year"></span> Babakr Saad · Built with care.</div>
+    <div class="foot-r">
+      <button class="foot-mode" data-mode-target="tech">IT</button>
+      <span>·</span>
+      <button class="foot-mode" data-mode-target="build">Build</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
