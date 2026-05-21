@@ -243,8 +243,8 @@ const BUILDS = [
   {
     name: 'Nile Petroleum (Nilepet)',
     mark: 'NILEPET', sub: "powering Sudan",
-    url: 'https://nile-petroleum.pages.dev',
-    displayUrl: 'nile-petroleum.pages.dev',
+    url: 'https://nile-petroleum.beko1986.workers.dev',
+    displayUrl: 'nile-petroleum.beko1986.workers.dev',
     ghUrl: 'https://github.com/bekoblast/nile-petroleum',
     desc: 'Bilingual EN/AR corporate site for Sudan\'s national petroleum company. Integrated energy operations: exploration, refining, distribution, and 450+ retail stations.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bilingual', 'RTL'],
