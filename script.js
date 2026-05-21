@@ -203,8 +203,8 @@ const BUILDS = [
   {
     name: 'JNCO Trading & Contracting',
     mark: 'JNCO', sub: 'since 1973',
-    url: 'https://lovely-mochi-c24ebb.netlify.app',
-    displayUrl: 'lovely-mochi-c24ebb.netlify.app',
+    url: 'https://naifjnco.com',
+    displayUrl: 'naifjnco.com',
     desc: 'Corporate site for Jufal & Naif Obaid Al-Shammari Trading & Contracting — five decades of heavy construction across roads, bridges, water systems, and industrial development in Saudi Arabia.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Multi-page', 'Corporate'],
     gradient: 'linear-gradient(135deg, #0f766e 0%, #facc15 100%)'
@@ -212,8 +212,8 @@ const BUILDS = [
   {
     name: 'GCC Advanced Contracting',
     mark: 'GCC', sub: 'middle east contractor',
-    url: 'https://gcc-advanced.netlify.app',
-    displayUrl: 'gcc-advanced.netlify.app',
+    url: 'https://gcc-advanced.pages.dev',
+    displayUrl: 'gcc-advanced.pages.dev',
     desc: 'Clean static rebuild of a UAE-based contractor\'s corporate site — civil engineering, MEP services, steel structures, and infrastructure development. Replaces a compromised WordPress install with a fast, secure single-page site.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'Static'],
     gradient: 'linear-gradient(135deg, #be123c 0%, #f59e0b 100%)'
@@ -230,8 +230,8 @@ const BUILDS = [
   {
     name: 'Gezira Hila Impex',
     mark: 'GHI', sub: 'est. 1997',
-    url: 'https://celadon-beijinho-928b7f.netlify.app',
-    displayUrl: 'celadon-beijinho-928b7f.netlify.app',
+    url: 'https://ghi.beko1986.workers.dev',
+    displayUrl: 'ghi.beko1986.workers.dev',
     desc: 'Corporate site for Sudan\'s leading exporter of gum arabic and natural commodities — sesame, hibiscus, groundnut — serving clients across four continents from Khartoum and Dubai.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Corporate', 'Branding'],
     gradient: 'linear-gradient(135deg, #064e3b 0%, #d97706 100%)'
