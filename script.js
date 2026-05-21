@@ -239,8 +239,8 @@ const BUILDS = [
   {
     name: 'Nile Petroleum (Nilepet)',
     mark: 'NILEPET', sub: "powering Sudan",
-    url: 'https://magenta-zuccutto-c5c8c9.netlify.app',
-    displayUrl: 'magenta-zuccutto-c5c8c9.netlify.app',
+    url: 'https://nile-petroleum.pages.dev',
+    displayUrl: 'nile-petroleum.pages.dev',
     desc: 'Bilingual EN/AR corporate site for Sudan\'s national petroleum company. Integrated energy operations: exploration, refining, distribution, and 450+ retail stations.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bilingual', 'RTL'],
     gradient: 'linear-gradient(135deg, #2A2882 0%, #06b6d4 100%)'
@@ -248,8 +248,8 @@ const BUILDS = [
   {
     name: 'Canar Fuel Tanker Monitor',
     mark: 'CANAR', sub: 'iot · 2023 → 2026',
-    url: 'https://fuel-tanker-monitor.netlify.app',
-    displayUrl: 'fuel-tanker-monitor.netlify.app',
+    url: 'https://fuel-tanker-monitor.pages.dev',
+    displayUrl: 'fuel-tanker-monitor.pages.dev',
     ghUrl: 'https://github.com/bekoblast/fuel-tanker-monitor',
     desc: 'Faithful React rebuild of a 2023 industrial IoT dashboard originally built on Node-RED + ThingsBoard for Canar (Sudan). Decodes 140-byte binary packets from Tekelec ultrasonic sensors — model, BCD IMEI, alarms, battery, 28 historical readings — and visualizes the fleet on an OSM map with per-tank gauges and charts. The platform was lost during the 2023 conflict; the flows survived.',
     tags: ['Next.js 16', 'React 19', 'Tailwind 4', 'Leaflet', 'Recharts', 'IoT', 'Binary Protocol'],
@@ -258,8 +258,8 @@ const BUILDS = [
   {
     name: 'SEDC Transformer Monitor',
     mark: 'SEDC', sub: 'iot · khartoum grid',
-    url: 'https://sedc-transformer-monitor.netlify.app',
-    displayUrl: 'sedc-transformer-monitor.netlify.app',
+    url: 'https://sedc-transformer-monitor.pages.dev',
+    displayUrl: 'sedc-transformer-monitor.pages.dev',
     ghUrl: 'https://github.com/bekoblast/sedc-transformer-monitor',
     desc: 'Companion IoT rebuild for the Sudanese Electrical Distribution Company — 3-phase distribution transformer monitoring across Khartoum. 24-field telemetry per device: voltages (L-N + L-L), currents, power factor, frequency, plus per-phase timeseries. Built on the same architecture as the Canar rebuild.',
     tags: ['Next.js 16', 'React 19', 'Tailwind 4', 'Leaflet', 'Recharts', 'IoT', '3-phase'],
