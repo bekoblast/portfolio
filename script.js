@@ -196,8 +196,9 @@ const BUILDS = [
     mark: 'BS', sub: 'beko-cloud.work',
     url: 'https://beko-cloud.work',
     displayUrl: 'beko-cloud.work',
-    desc: 'The site you\'re on right now. Dual-mode profile with click-anchored radial-wipe theme transitions, animated particle background, and a content layer that re-renders per mode.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Netlify'],
+    ghUrl: 'https://github.com/bekoblast/portfolio',
+    desc: 'The site you\'re on right now. Dual-mode profile with click-anchored radial-wipe theme transitions, animated particle background, and a content layer that re-renders per mode. Continuous deployment from GitHub to Cloudflare.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Cloudflare'],
     gradient: 'linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%)'
   },
   {
@@ -205,8 +206,9 @@ const BUILDS = [
     mark: 'JNCO', sub: 'since 1973',
     url: 'https://naifjnco.com',
     displayUrl: 'naifjnco.com',
+    ghUrl: 'https://github.com/bekoblast/jnco',
     desc: 'Corporate site for Jufal & Naif Obaid Al-Shammari Trading & Contracting — five decades of heavy construction across roads, bridges, water systems, and industrial development in Saudi Arabia.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Multi-page', 'Corporate'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Multi-page', 'Custom Domain'],
     gradient: 'linear-gradient(135deg, #0f766e 0%, #facc15 100%)'
   },
   {
@@ -214,8 +216,9 @@ const BUILDS = [
     mark: 'GCC', sub: 'middle east contractor',
     url: 'https://gcc-advanced.pages.dev',
     displayUrl: 'gcc-advanced.pages.dev',
+    ghUrl: 'https://github.com/bekoblast/gcc-advanced',
     desc: 'Clean static rebuild of a UAE-based contractor\'s corporate site — civil engineering, MEP services, steel structures, and infrastructure development. Replaces a compromised WordPress install with a fast, secure single-page site.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Netlify', 'Static'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Cloudflare', 'Static'],
     gradient: 'linear-gradient(135deg, #be123c 0%, #f59e0b 100%)'
   },
   {
@@ -232,6 +235,7 @@ const BUILDS = [
     mark: 'GHI', sub: 'est. 1997',
     url: 'https://ghi.beko1986.workers.dev',
     displayUrl: 'ghi.beko1986.workers.dev',
+    ghUrl: 'https://github.com/bekoblast/GHI',
     desc: 'Corporate site for Sudan\'s leading exporter of gum arabic and natural commodities — sesame, hibiscus, groundnut — serving clients across four continents from Khartoum and Dubai.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Corporate', 'Branding'],
     gradient: 'linear-gradient(135deg, #064e3b 0%, #d97706 100%)'
@@ -241,6 +245,7 @@ const BUILDS = [
     mark: 'NILEPET', sub: "powering Sudan",
     url: 'https://nile-petroleum.pages.dev',
     displayUrl: 'nile-petroleum.pages.dev',
+    ghUrl: 'https://github.com/bekoblast/nile-petroleum',
     desc: 'Bilingual EN/AR corporate site for Sudan\'s national petroleum company. Integrated energy operations: exploration, refining, distribution, and 450+ retail stations.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bilingual', 'RTL'],
     gradient: 'linear-gradient(135deg, #2A2882 0%, #06b6d4 100%)'
