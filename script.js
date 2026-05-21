@@ -12,12 +12,12 @@ const DATA = {
       "17+ years building web applications, IoT systems, and ERP platforms. I turn business problems into reliable, scalable software — from sensor networks measuring fuel tanks to enterprise resource planning rollouts.",
     about: [
       "I'm <strong>Babakr</strong> — a software developer and IT professional with over <strong>17 years</strong> in IT systems, software engineering, and cloud technologies. My work spans full-stack web development, IoT systems architecture, and ERP implementation.",
-      "I've built <strong>industrial monitoring systems</strong> for fuel storage and electrical transformers, integrated <strong>Odoo ERP</strong> end-to-end, and now lead the digital workflows for a contracting establishment in Saudi Arabia. I lean hard on AI-assisted development to ship faster without cutting corners.",
+      "I've built <strong>industrial monitoring systems</strong> for fuel storage and electrical transformers, integrated <strong>Odoo ERP</strong> end-to-end, and now lead the digital workflows for a contracting establishment in Saudi Arabia. I work fluently in <strong>vibe coding / AI pair programming</strong> — shipping production features end-to-end through natural-language collaboration with AI assistants. This portfolio, the Canar/SEDC IoT rebuilds, and the Goals Tracker were all built that way.",
       "I care about <strong>clean architecture, dependable systems, and automation</strong> — the kind of work that quietly saves hours every day."
     ],
     skills: [
       { title: 'Programming & Development', items: ['JavaScript','Python','Node.js','React','Laravel','ASP.NET','REST APIs'] },
-      { title: 'AI & Modern Tools', items: ['ChatGPT','Google Gemini','AI Coding Assistants','Prompt Engineering','Generative AI Workflows','Productivity Automation'] },
+      { title: 'AI & Modern Tools', items: ['Vibe Coding','AI Pair Programming','Claude Code','ChatGPT','Google Gemini','AI Coding Assistants','Prompt Engineering','Generative AI Workflows','Productivity Automation'] },
       { title: 'Systems & Cloud', items: ['Linux Server Admin','Windows Server','AWS Cloud','OpenStack','Docker','Git'] },
       { title: 'Databases', items: ['MySQL','PostgreSQL','MongoDB','Database Design'] },
       { title: 'IoT Development', items: ['IoT Architecture','Sensor Integration','Data Acquisition','Node-RED','ThingsBoard','OpenRemote','Industrial IoT'] },
