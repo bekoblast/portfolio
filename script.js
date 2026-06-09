@@ -251,6 +251,15 @@ const BUILDS = [
     gradient: 'linear-gradient(135deg, #2A2882 0%, #06b6d4 100%)'
   },
   {
+    name: 'Future Hitech',
+    mark: 'FH', sub: 'dubai · MEP',
+    url: 'https://future-hightech-webpage.beko1986.workers.dev',
+    displayUrl: 'future-hightech-webpage.beko1986.workers.dev',
+    desc: 'Brand-new single-page corporate site for a Dubai-based MEP contractor — Mechanical, Electrical, and Plumbing services across residential, commercial, industrial, and institutional sectors. Built freelance from the client\'s 2024 company profile PDF: hero, about, services, approach, sectors, projects, and contact in one fast Astro + Tailwind deployment.',
+    tags: ['Astro', 'Tailwind', 'Single-page', 'Corporate', 'MEP', 'Cloudflare'],
+    gradient: 'linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%)'
+  },
+  {
     name: 'Canar Fuel Tanker Monitor',
     mark: 'CANAR', sub: 'iot · 2023 → 2026',
     url: 'https://fuel-tanker-monitor.pages.dev',
