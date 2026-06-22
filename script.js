@@ -196,6 +196,7 @@ const BUILDS = [
     mark: 'BS', sub: 'beko-cloud.work',
     url: 'https://beko-cloud.work',
     displayUrl: 'beko-cloud.work',
+    screenshot: 'assets/shots/portfolio.jpg',
     ghUrl: 'https://github.com/bekoblast/portfolio',
     desc: 'The site you\'re on right now. Dual-mode profile with click-anchored radial-wipe theme transitions, animated particle background, and a content layer that re-renders per mode. Continuous deployment from GitHub to Cloudflare.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Cloudflare'],
@@ -206,6 +207,7 @@ const BUILDS = [
     mark: 'JNCO', sub: 'since 1973',
     url: 'https://naifjnco.com',
     displayUrl: 'naifjnco.com',
+    screenshot: 'assets/shots/jnco.jpg',
     ghUrl: 'https://github.com/bekoblast/jnco',
     desc: 'Corporate site for Jufal & Naif Obaid Al-Shammari Trading & Contracting — five decades of heavy construction across roads, bridges, water systems, and industrial development in Saudi Arabia.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Multi-page', 'Custom Domain'],
@@ -216,6 +218,7 @@ const BUILDS = [
     mark: 'GCC', sub: 'middle east contractor',
     url: 'https://gcc-advanced.pages.dev',
     displayUrl: 'gcc-advanced.pages.dev',
+    screenshot: 'assets/shots/gcc.jpg',
     ghUrl: 'https://github.com/bekoblast/gcc-advanced',
     desc: 'Clean static rebuild of a UAE-based contractor\'s corporate site — civil engineering, MEP services, steel structures, and infrastructure development. Replaces a compromised WordPress install with a fast, secure single-page site.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Cloudflare', 'Static'],
@@ -226,15 +229,26 @@ const BUILDS = [
     mark: 'GTS', sub: 'ict · iot · cloud',
     url: 'https://gts-hitech.com',
     displayUrl: 'gts-hitech.com',
-    desc: 'Corporate site for an ICT solutions company with offices in Dubai, Khartoum, and Juba. Services: networking, wireless, CCTV/access control, IoT, cloud, cybersecurity, and solar power.',
+    desc: 'Original corporate site for an ICT solutions company with offices in Dubai, Khartoum, and Juba. Services: networking, wireless, CCTV/access control, IoT, cloud, cybersecurity, and solar power.',
     tags: ['WordPress', 'Corporate', 'Multi-region', 'ICT'],
     gradient: 'linear-gradient(135deg, #4338ca 0%, #06b6d4 100%)'
+  },
+  {
+    name: 'GTS Hi-Tech — 2026 Rebuild',
+    mark: 'GTS', sub: 'astro · tailwind · gsap',
+    url: 'https://gts-new.pages.dev',
+    displayUrl: 'gts-new.pages.dev',
+    screenshot: 'assets/shots/gts-new.jpg',
+    desc: 'Modern rebuild of the GTS Hi-Tech corporate site (freelance for the former employer). Same 7 service pillars — networking, wireless, CCTV, IoT, cloud, cybersecurity, power — re-imagined as a fast single-page Astro + Tailwind + GSAP experience, deployed on Cloudflare.',
+    tags: ['Astro', 'Tailwind', 'GSAP', 'Single-page', 'Cloudflare'],
+    gradient: 'linear-gradient(135deg, #0f172a 0%, #06b6d4 100%)'
   },
   {
     name: 'Gezira Hila Impex',
     mark: 'GHI', sub: 'est. 1997',
     url: 'https://ghi.beko1986.workers.dev',
     displayUrl: 'ghi.beko1986.workers.dev',
+    screenshot: 'assets/shots/ghi.jpg',
     ghUrl: 'https://github.com/bekoblast/GHI',
     desc: 'Corporate site for Sudan\'s leading exporter of gum arabic and natural commodities — sesame, hibiscus, groundnut — serving clients across four continents from Khartoum and Dubai.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Corporate', 'Branding'],
@@ -245,6 +259,7 @@ const BUILDS = [
     mark: 'NILEPET', sub: "powering Sudan",
     url: 'https://nile-petroleum.beko1986.workers.dev',
     displayUrl: 'nile-petroleum.beko1986.workers.dev',
+    screenshot: 'assets/shots/nile.jpg',
     ghUrl: 'https://github.com/bekoblast/nile-petroleum',
     desc: 'Bilingual EN/AR corporate site for Sudan\'s national petroleum company. Integrated energy operations: exploration, refining, distribution, and 450+ retail stations.',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bilingual', 'RTL'],
@@ -255,6 +270,7 @@ const BUILDS = [
     mark: 'FH', sub: 'dubai · MEP',
     url: 'https://future-hightech-webpage.beko1986.workers.dev',
     displayUrl: 'future-hightech-webpage.beko1986.workers.dev',
+    screenshot: 'assets/shots/future.jpg',
     desc: 'Brand-new single-page corporate site for a Dubai-based MEP contractor — Mechanical, Electrical, and Plumbing services across residential, commercial, industrial, and institutional sectors. Built freelance from the client\'s 2024 company profile PDF: hero, about, services, approach, sectors, projects, and contact in one fast Astro + Tailwind deployment.',
     tags: ['Astro', 'Tailwind', 'Single-page', 'Corporate', 'MEP', 'Cloudflare'],
     gradient: 'linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%)'
@@ -264,6 +280,7 @@ const BUILDS = [
     mark: 'CANAR', sub: 'iot · 2023 → 2026',
     url: 'https://fuel-tanker-monitor.pages.dev',
     displayUrl: 'fuel-tanker-monitor.pages.dev',
+    screenshot: 'assets/shots/canar.jpg',
     ghUrl: 'https://github.com/bekoblast/fuel-tanker-monitor',
     desc: 'Faithful React rebuild of a 2023 industrial IoT dashboard originally built on Node-RED + ThingsBoard for Canar (Sudan). Decodes 140-byte binary packets from Tekelec ultrasonic sensors — model, BCD IMEI, alarms, battery, 28 historical readings — and visualizes the fleet on an OSM map with per-tank gauges and charts. The platform was lost during the 2023 conflict; the flows survived.',
     tags: ['Next.js 16', 'React 19', 'Tailwind 4', 'Leaflet', 'Recharts', 'IoT', 'Binary Protocol'],
@@ -274,6 +291,7 @@ const BUILDS = [
     mark: 'SEDC', sub: 'iot · khartoum grid',
     url: 'https://sedc-transformer-monitor.pages.dev',
     displayUrl: 'sedc-transformer-monitor.pages.dev',
+    screenshot: 'assets/shots/sedc.jpg',
     ghUrl: 'https://github.com/bekoblast/sedc-transformer-monitor',
     desc: 'Companion IoT rebuild for the Sudanese Electrical Distribution Company — 3-phase distribution transformer monitoring across Khartoum. 24-field telemetry per device: voltages (L-N + L-L), currents, power factor, frequency, plus per-phase timeseries. Built on the same architecture as the Canar rebuild.',
     tags: ['Next.js 16', 'React 19', 'Tailwind 4', 'Leaflet', 'Recharts', 'IoT', '3-phase'],
@@ -585,9 +603,16 @@ function renderBuilds() {
   BUILDS.forEach((b, i) => {
     const isDocker = b.type === 'docker';
     const isGithub = b.type === 'github';
-    const card = ce('article', 'build-card reveal' + (isDocker ? ' is-docker' : '') + (isGithub ? ' is-github' : ''));
+    const hasShot = !!b.screenshot;
+    const card = ce('article',
+      'build-card reveal' +
+      (isDocker ? ' is-docker' : '') +
+      (isGithub ? ' is-github' : '') +
+      (hasShot ? ' has-screenshot' : '')
+    );
     card.style.setProperty('--delay', (i * 70) + 'ms');
     card.style.setProperty('--build-grad', b.gradient);
+    if (hasShot) card.style.setProperty('--build-shot', `url('${b.screenshot}')`);
 
     // chrome (url bar) — Docker shows whale icon; GitHub shows octocat; websites show traffic-light dots
     let chrome;
