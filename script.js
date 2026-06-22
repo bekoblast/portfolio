@@ -333,90 +333,106 @@ const BUILDS = [
   }
 ];
 
-/* Credentials shared between modes */
+/* Credentials shared between modes.
+   `thumb` is a slug under assets/certs/<slug>.jpg — a rendered
+   image of the actual certificate (click opens a lightbox). */
+const CERT = (slug) => 'assets/certs/' + slug + '.jpg';
 const CREDS = {
   featured: [
-    { issuer: 'Google',  title: 'Google IT Support Professional Certificate', meta: '2025 · 4 courses · Coursera' },
-    { issuer: 'Meta',    title: 'Meta Back-End Developer Certificate', meta: '2025 · 5 courses · Coursera' },
-    { issuer: 'Google',  title: 'Google AI Essentials', meta: '2025 · Specialization' },
-    { issuer: 'AWS',     title: 'AWS Cloud Technical Essentials', meta: '2025 · Foundational' },
-    { issuer: 'Google',  title: 'Generative AI Learning Path', meta: '2025 · Completed' },
-    { issuer: 'EF SET',  title: 'English Certificate — C2 Proficient', meta: '2023' },
+    { issuer: 'Google',  title: 'Google IT Support Professional Certificate', meta: '2025 · 4 courses · Coursera', thumb: 'gits-1' },
+    { issuer: 'Meta',    title: 'Meta Back-End Developer Certificate', meta: '2025 · 5 courses · Coursera', thumb: 'meta-be-1' },
+    { issuer: 'Google',  title: 'Google AI Essentials', meta: '2025 · Specialization', thumb: 'ai-essentials' },
+    { issuer: 'AWS',     title: 'AWS Cloud Technical Essentials', meta: '2025 · Foundational', thumb: 'aws-cloud-essentials' },
+    { issuer: 'Google',  title: 'Generative AI Learning Path', meta: '2025 · Completed', thumb: 'genai-path' },
+    { issuer: 'EF SET',  title: 'English Certificate — C2 Proficient', meta: '2023', thumb: 'ef-set' },
     { issuer: 'Sudan University', title: 'B.Sc. Computer Science & IT', meta: '2010 · Sudan University of Science & Technology' },
-    { issuer: 'Edraak',  title: 'Outsource Inventory Management', meta: 'Certificate' }
+    { issuer: 'Edraak',  title: 'Outsource Inventory Management', meta: 'Certificate', thumb: 'outsource-inventory' }
   ],
   programs: [
     {
       issuer: 'Google',
       title: 'Google IT Support Professional Certificate',
       meta: '4 courses · Coursera',
+      thumb: 'gits-1',
       modules: [
-        'Technical Support Fundamentals',
-        'The Bits and Bytes of Computer Networking',
-        'Operating Systems & You — Becoming a Power User',
-        'System Administration & IT Infrastructure Services'
+        { name: 'Technical Support Fundamentals', thumb: 'gits-1' },
+        { name: 'The Bits and Bytes of Computer Networking', thumb: 'gits-2' },
+        { name: 'Operating Systems & You — Becoming a Power User', thumb: 'gits-3' },
+        { name: 'System Administration & IT Infrastructure Services', thumb: 'gits-4' }
       ]
     },
     {
       issuer: 'Meta',
       title: 'Meta Back-End Developer Certificate',
       meta: '5 courses · Coursera',
+      thumb: 'meta-be-1',
       modules: [
-        'Introduction to Back-End Development',
-        'Programming in Python',
-        'Version Control',
-        'Introduction to Databases for Back-End Development',
-        'Database Structures & Management with MySQL'
+        { name: 'Introduction to Back-End Development', thumb: 'meta-be-1' },
+        { name: 'Programming in Python', thumb: 'meta-be-2' },
+        { name: 'Version Control', thumb: 'meta-be-3' },
+        { name: 'Introduction to Databases for Back-End Development', thumb: 'meta-be-4' },
+        { name: 'Database Structures & Management with MySQL', thumb: 'meta-be-5' }
       ]
     },
     {
       issuer: 'Meta',
       title: 'Meta React Native Specialization',
       meta: '4 courses · Coursera',
+      thumb: 'meta-rn-react',
       modules: [
-        'Introduction to Mobile Development',
-        'Programming with JavaScript',
-        'React Basics',
-        'Version Control'
+        { name: 'Introduction to Mobile Development', thumb: 'meta-rn-mobile' },
+        { name: 'Programming with JavaScript', thumb: 'meta-rn-js' },
+        { name: 'React Basics', thumb: 'meta-rn-react' },
+        { name: 'Version Control', thumb: 'meta-rn-vc' }
       ]
     },
     {
       issuer: 'Google',
       title: 'AI Specializations',
       meta: 'Coursera & Google',
+      thumb: 'ai-essentials',
       modules: [
-        'Generative AI Leader',
-        'Generative AI Learning Path (Completed)',
-        'Google AI Essentials Specialization (Completed)'
+        { name: 'Generative AI Leader', thumb: 'genai-leader' },
+        { name: 'Generative AI Learning Path', thumb: 'genai-path' },
+        { name: 'Google AI Essentials Specialization', thumb: 'ai-essentials' }
       ]
     },
     {
       issuer: 'Google',
       title: 'Google IT Automation with Python',
       meta: 'Coursera',
-      modules: ['Crash Course on Python']
+      thumb: 'python-crash',
+      modules: [
+        { name: 'Crash Course on Python', thumb: 'python-crash' }
+      ]
     },
     {
       issuer: 'Edraak / ICDL',
       title: 'ICDL — International Computer Driving License',
       meta: '4 modules',
+      thumb: 'icdl-1',
       modules: [
-        'Computer Essentials',
-        'Internet & Email Essentials',
-        'Word Processing',
-        'Excel Spreadsheets'
+        { name: 'Computer Essentials', thumb: 'icdl-1' },
+        { name: 'Internet & Email Essentials', thumb: 'icdl-2' },
+        { name: 'Word Processing', thumb: 'icdl-3' },
+        { name: 'Excel Spreadsheets', thumb: 'icdl-4' }
       ]
     },
     {
       issuer: 'Edraak',
       title: 'Networking & Excel',
       meta: '2 courses',
-      modules: ['Introduction to Networks', 'Advanced Excel']
+      thumb: 'intro-network',
+      modules: [
+        { name: 'Introduction to Networks', thumb: 'intro-network' },
+        { name: 'Advanced Excel', thumb: 'advanced-excel' }
+      ]
     },
     {
       issuer: 'Udemy',
       title: 'Learn Linux in 5 Days and Level Up Your Career',
-      meta: 'Self-paced'
+      meta: 'Self-paced',
+      thumb: 'linux-5-days'
     }
   ]
 };
@@ -593,7 +609,9 @@ const ICONS = {
   github:   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2c-3.19.69-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.44-2.69 5.42-5.25 5.71.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>',
   docker:   '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.55 9.97c-.06-.05-.6-.46-1.74-.46-.3 0-.6.03-.9.08-.22-1.49-1.42-2.22-1.48-2.26l-.3-.18-.2.28c-.25.39-.43.83-.54 1.29-.2.86-.07 1.66.34 2.36-.5.28-1.3.34-1.48.35H1.96c-.38 0-.69.3-.69.68 0 .85.14 1.7.42 2.5a5.94 5.94 0 0 0 1.35 2.15c.7.69 1.9 1.13 3.45 1.27 2.32.2 4.55-.18 6.55-1.13 1.62-.78 2.78-2 3.62-3.52 2.07.07 4.4-.5 5.18-2.3l.08-.16-.12-.13c-.05-.06-.27-.27-.66-.41zM4.7 11.27h1.9c.09 0 .17-.07.17-.16V9.43c0-.09-.08-.17-.17-.17H4.7c-.09 0-.17.08-.17.17v1.68c0 .09.08.16.17.16zm2.62 0h1.9c.09 0 .17-.07.17-.16V9.43c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.16.17.16zm2.66 0h1.9c.09 0 .17-.07.17-.16V9.43c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.16.17.16zm2.62 0h1.9c.09 0 .17-.07.17-.16V9.43c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.16.17.16zM7.32 8.85h1.9c.09 0 .17-.08.17-.17V7c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.17.17.17zm2.66 0h1.9c.09 0 .17-.08.17-.17V7c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.17.17.17zm2.62 0h1.9c.09 0 .17-.08.17-.17V7c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.17.17.17zm0-2.42h1.9c.09 0 .17-.08.17-.17V4.58c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.17.17.17zm2.65 4.84h1.9c.09 0 .17-.07.17-.16V9.43c0-.09-.08-.17-.17-.17h-1.9c-.09 0-.17.08-.17.17v1.68c0 .09.08.16.17.16z"/></svg>',
   star:     '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.95 6.93L22 9.99l-5.5 4.75L18.18 22 12 17.77 5.82 22l1.68-7.26L2 9.99l7.05-1.06z"/></svg>',
-  copy:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>'
+  copy:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+  expand:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>',
+  close:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>'
 };
 
 function renderBuilds() {
@@ -713,35 +731,69 @@ function renumberSections() {
 /* ---------- CREDENTIALS RENDER ---------- */
 function renderCreds() {
   const f = $('#cred-featured');
-  CREDS.featured.forEach(c => {
-    f.appendChild(buildCred(c));
-  });
+  CREDS.featured.forEach(c => f.appendChild(buildCred(c)));
+
   const p = $('#cred-programs');
-  CREDS.programs.forEach(c => {
-    p.appendChild(buildCred(c, true));
-  });
+  CREDS.programs.forEach(c => p.appendChild(buildCred(c, true)));
+
   const m = $('#cred-modules');
-  // flat list of every module across programs
+  // flat wall of every individual certificate across programs
   CREDS.programs.forEach(prog => {
-    if (!prog.modules) return;
-    prog.modules.forEach(mod => {
-      const card = ce('div', 'cred-card');
-      card.innerHTML = `
-        <span class="cred-issuer"><span class="cred-issuer-dot"></span>${prog.issuer}</span>
-        <h3 class="cred-title">${mod}</h3>
-        <span class="cred-meta">From: ${prog.title}</span>
-      `;
-      m.appendChild(card);
-    });
+    if (prog.modules && prog.modules.length) {
+      prog.modules.forEach(mod => {
+        m.appendChild(buildCertCard({
+          issuer: prog.issuer,
+          title: mod.name,
+          meta: 'From: ' + prog.title,
+          thumb: mod.thumb
+        }));
+      });
+    } else if (prog.thumb) {
+      // single-cert program (e.g. Learn Linux) — show it directly
+      m.appendChild(buildCertCard({
+        issuer: prog.issuer,
+        title: prog.title,
+        meta: prog.meta || '',
+        thumb: prog.thumb
+      }));
+    }
   });
 }
-function buildCred(c, withModules = false) {
-  const card = ce('article', 'cred-card');
+
+// thumbnail (clickable) markup — only when a cert image exists
+function certThumb(thumb, title) {
+  if (!thumb) return '';
+  const src = CERT(thumb);
+  return `<button class="cred-thumb" data-cert="${src}" aria-label="View ${title} certificate">
+            <img src="${src}" alt="${title} certificate" loading="lazy">
+            <span class="cred-thumb-zoom">${ICONS.expand}</span>
+          </button>`;
+}
+
+// compact card used on the "All modules" wall — image on top, text below
+function buildCertCard(c) {
+  const card = ce('article', 'cred-card' + (c.thumb ? ' has-thumb' : ''));
   card.innerHTML = `
-    <span class="cred-issuer"><span class="cred-issuer-dot"></span>${c.issuer}</span>
-    <h3 class="cred-title">${c.title}</h3>
-    <span class="cred-meta">${c.meta || ''}</span>
-    ${withModules && c.modules ? `<ul class="cred-modules">${c.modules.map(m => `<li>${m}</li>`).join('')}</ul>` : ''}
+    ${certThumb(c.thumb, c.title)}
+    <div class="cred-text">
+      <span class="cred-issuer"><span class="cred-issuer-dot"></span>${c.issuer}</span>
+      <h3 class="cred-title">${c.title}</h3>
+      <span class="cred-meta">${c.meta || ''}</span>
+    </div>
+  `;
+  return card;
+}
+
+function buildCred(c, withModules = false) {
+  const card = ce('article', 'cred-card' + (c.thumb ? ' has-thumb' : ''));
+  card.innerHTML = `
+    ${certThumb(c.thumb, c.title)}
+    <div class="cred-text">
+      <span class="cred-issuer"><span class="cred-issuer-dot"></span>${c.issuer}</span>
+      <h3 class="cred-title">${c.title}</h3>
+      <span class="cred-meta">${c.meta || ''}</span>
+      ${withModules && c.modules ? `<ul class="cred-modules">${c.modules.map(m => `<li>${m.name}</li>`).join('')}</ul>` : ''}
+    </div>
   `;
   return card;
 }
@@ -912,6 +964,39 @@ function setupCredTabs() {
   });
 }
 
+/* ---------- CERTIFICATE LIGHTBOX ---------- */
+function setupCertLightbox() {
+  // build the overlay once
+  const box = ce('div', 'cert-lightbox');
+  box.innerHTML = `
+    <button class="cert-lightbox-close" aria-label="Close">${ICONS.close}</button>
+    <img class="cert-lightbox-img" alt="Certificate">
+  `;
+  document.body.appendChild(box);
+  const img = box.querySelector('.cert-lightbox-img');
+
+  const open = (src) => {
+    img.src = src;
+    box.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    box.classList.remove('is-open');
+    document.body.style.overflow = '';
+    setTimeout(() => { img.src = ''; }, 300);
+  };
+
+  // delegate clicks on any cert thumbnail
+  document.body.addEventListener('click', (e) => {
+    const t = e.target.closest('.cred-thumb');
+    if (t) { e.preventDefault(); open(t.dataset.cert); return; }
+    if (e.target === box || e.target.closest('.cert-lightbox-close')) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && box.classList.contains('is-open')) close();
+  });
+}
+
 /* ---------- WIRE UP ---------- */
 function bindModeButtons() {
   document.body.addEventListener('click', e => {
@@ -946,6 +1031,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupHeroCanvas();
   setupActiveNav();
   setupCredTabs();
+  setupCertLightbox();
   bindModeButtons();
   bindMobileMenu();
   // run stat counters once hero is in view (it is, at load)
