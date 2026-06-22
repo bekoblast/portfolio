@@ -345,7 +345,6 @@ const CREDS = {
     { issuer: 'AWS',     title: 'AWS Cloud Technical Essentials', meta: '2025 · Foundational', thumb: 'aws-cloud-essentials' },
     { issuer: 'Google',  title: 'Generative AI Learning Path', meta: '2025 · Completed', thumb: 'genai-path' },
     { issuer: 'EF SET',  title: 'English Certificate — C2 Proficient', meta: '2023', thumb: 'ef-set' },
-    { issuer: 'Sudan University', title: 'B.Sc. Computer Science & IT', meta: '2010 · Sudan University of Science & Technology' },
     { issuer: 'Edraak',  title: 'Outsource Inventory Management', meta: 'Certificate', thumb: 'outsource-inventory' }
   ],
   programs: [
