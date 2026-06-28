@@ -203,6 +203,18 @@ const BUILDS = [
     gradient: 'linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%)'
   },
   {
+    type: 'github',
+    name: 'Tracer — Gum Arabic Traceability',
+    mark: 'TRACER', sub: 'laravel · filament',
+    url: null,
+    displayUrl: 'github.com/bekoblast/tracer',
+    ghUrl: 'https://github.com/bekoblast/tracer',
+    screenshot: 'assets/shots/tracer.png',
+    desc: 'Full-stack rebuild of a 7-year-old CodeIgniter inventory system into a Laravel 11 + Filament 3 traceability platform for a gum-arabic exporter. Tracks every batch from village-market vendor through cleaning/processing to sealed export container — with bidirectional farm-to-container tracing, a transactional stock ledger that can\'t go negative, admin/operator roles, and a full migration of years of legacy data. Ships as a FrankenPHP + Docker stack with automatic HTTPS.',
+    tags: ['Laravel 11', 'Filament 3', 'MariaDB', 'Docker', 'FrankenPHP', 'PHPUnit'],
+    gradient: 'linear-gradient(135deg, #d97706 0%, #1c1917 100%)'
+  },
+  {
     name: 'JNCO Trading & Contracting',
     mark: 'JNCO', sub: 'since 1973',
     url: 'https://naifjnco.com',
