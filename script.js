@@ -351,6 +351,7 @@ const BUILDS = [
 const CERT = (slug) => 'assets/certs/' + slug + '.jpg';
 const CREDS = {
   featured: [
+    { issuer: 'IBM',     title: 'Introduction to DevOps', meta: '2026 · IBM · Coursera', thumb: 'devops' },
     { issuer: 'Google',  title: 'Google IT Support Professional Certificate', meta: '2025 · 4 courses · Coursera', thumb: 'gits-1' },
     { issuer: 'Meta',    title: 'Meta Back-End Developer Certificate', meta: '2025 · 5 courses · Coursera', thumb: 'meta-be-1' },
     { issuer: 'Google',  title: 'Google AI Essentials', meta: '2025 · Specialization', thumb: 'ai-essentials' },
@@ -438,6 +439,12 @@ const CREDS = {
         { name: 'Introduction to Networks', thumb: 'intro-network' },
         { name: 'Advanced Excel', thumb: 'advanced-excel' }
       ]
+    },
+    {
+      issuer: 'IBM',
+      title: 'Introduction to DevOps',
+      meta: 'IBM · Coursera',
+      thumb: 'devops'
     },
     {
       issuer: 'Udemy',
