@@ -310,6 +310,16 @@ const BUILDS = [
     gradient: 'linear-gradient(135deg, #facc15 0%, #b91c1c 100%)'
   },
   {
+    name: 'Sanabil Medical',
+    mark: 'SANABIL', sub: 'medical supplies · KSA',
+    url: 'https://sanabilmedical.com',
+    displayUrl: 'sanabilmedical.com',
+    screenshot: 'assets/shots/sanabil.png',
+    desc: 'Corporate WordPress site for a Saudi medical supplies & equipment distributor. Built and maintained end-to-end — hosting, database, and ongoing WordPress administration.',
+    tags: ['WordPress', 'Corporate', 'Medical Supplies', 'Saudi Arabia'],
+    gradient: 'linear-gradient(135deg, #065f46 0%, #38bdf8 100%)'
+  },
+  {
     name: 'Aqarati Property Manager',
     type: 'github',
     mark: 'AQARATI', sub: 'property manager',
