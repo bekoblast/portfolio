@@ -352,6 +352,16 @@ const BUILDS = [
     gradient: 'linear-gradient(135deg, #0db7ed 0%, #2496ed 100%)',
     ghUrl: 'https://github.com/bekoblast/goals-tracker',
     stars: 36
+  },
+  {
+    name: 'Munassiq — BOQ Formatter',
+    mark: 'MUNASSIQ', sub: 'boq · excel · rtl',
+    url: 'https://munassiq.beko-cloud.work',
+    displayUrl: 'munassiq.beko-cloud.work',
+    ghUrl: 'https://github.com/bekoblast/munassiq',
+    desc: 'Browser tool that reformats raw Saudi government tender BOQ Excel exports into clean, print-ready sheets — landscape orientation, RTL layout, automatic empty-column removal, duplicate-column detection with user-driven cleanup, and wrapped Arabic spec text. Runs entirely client-side with ExcelJS; no upload, no server.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'ExcelJS', 'RTL Arabic'],
+    gradient: 'linear-gradient(135deg, #1f3b57 0%, #1f6feb 100%)'
   }
 ];
 
