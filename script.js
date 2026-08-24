@@ -377,6 +377,7 @@ const CREDS = {
     { issuer: 'Google',  title: 'Google AI Essentials', meta: '2025 · Specialization', thumb: 'ai-essentials' },
     { issuer: 'AWS',     title: 'AWS Cloud Technical Essentials', meta: '2025 · Foundational', thumb: 'aws-cloud-essentials' },
     { issuer: 'Google',  title: 'Generative AI Learning Path', meta: '2025 · Completed', thumb: 'genai-path' },
+    { issuer: 'FireBits',title: 'Odoo Functional', meta: '2019 · 30 training hours · FireBits Training Center', thumb: 'odoo-functional' },
     { issuer: 'EF SET',  title: 'English Certificate — C2 Proficient', meta: '2023', thumb: 'ef-set' },
     { issuer: 'Edraak',  title: 'Outsource Inventory Management', meta: 'Certificate', thumb: 'outsource-inventory' }
   ],
@@ -465,6 +466,12 @@ const CREDS = {
       title: 'Introduction to DevOps',
       meta: 'IBM · Coursera',
       thumb: 'devops'
+    },
+    {
+      issuer: 'FireBits',
+      title: 'Odoo Functional',
+      meta: '30 hrs · FireBits Training Center · 2019',
+      thumb: 'odoo-functional'
     },
     {
       issuer: 'Udemy',
